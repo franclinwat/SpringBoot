@@ -24,12 +24,6 @@ class SpringbootProduitApplicationTests {
 		produitRepository.save(prod);
 	}
 	
-	@Test
-	public void testDeletedProduit() {
-		
-		produitRepository.deleteById(1L);
-		produitRepository.deleteById(2L);
-	}
 	
 
 }
