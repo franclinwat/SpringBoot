@@ -1,6 +1,6 @@
 package com.wat.produits.service;
 
-import java.util.ArrayList;
+import java.util.List;
 
 import com.wat.produits.entities.Produit;
 
@@ -12,7 +12,7 @@ public interface ProduitService {
 	void deleteProduit(Produit p);
 	void deleteProduitById(Long id);
 	Produit getProduit(Long id);
-	ArrayList<Produit> getAllproduit();
+	List<Produit> getAllproduit();
 	
 
 }
