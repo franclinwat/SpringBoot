@@ -4,9 +4,12 @@ import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.wat.produits.entities.Produit;
 import com.wat.produits.repos.ProduitRepository;
+
+@Service
 
 public class ProduitserviceImpl  implements ProduitService {
 	
