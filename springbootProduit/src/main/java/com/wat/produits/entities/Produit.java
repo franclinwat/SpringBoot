@@ -10,6 +10,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonFormat.Shape;
+
 import lombok.Data;
 
 
@@ -24,7 +27,15 @@ public class Produit {
 	private Long idproduit;
 	private String nomProduit;
 	private double prixProduit;
+	//format de passage de l'entite au front 
+	@JsonFormat(shape = Shape.STRING, pattern = "yyyy-MM-dd")
 	private Date date;
+	
+	
+	
+	public Produit() {
+
+	}
 	
 	public Produit(String nomProduit, int prixProduit,Date date) {
 
@@ -39,5 +50,7 @@ public class Produit {
 		this.prixProduit=prixProduit;
 		
 	}
+	
+	
 
 }

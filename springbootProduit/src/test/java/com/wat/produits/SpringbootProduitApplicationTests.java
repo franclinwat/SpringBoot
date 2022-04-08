@@ -21,7 +21,7 @@ class SpringbootProduitApplicationTests {
 	@Test
 	public void tesCreateProduit() {
 		
-		produitRepository.save(prod);
+		produitRepository.save(prod2);
 	}
 	
 	
