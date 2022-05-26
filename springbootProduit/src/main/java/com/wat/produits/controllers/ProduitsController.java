@@ -51,20 +51,13 @@ public class ProduitsController {
 		p.setPrixProduit(produit.getPrixProduit());
 		p.setDate(dateCreation);
 		
-		Produit saveProduit=produitService.saveProduit(p);
+ 		Produit saveProduit=produitService.saveProduit(p);
 		String msg ="produit enregistre avec Id "+saveProduit.getIdproduit();
 		modelMap.addAttribute("msg",msg);
 		return "createProduit";
 	}
 	
-	@RequestMapping("/ListeProduits")
-			public String ListeProduits(ModelMap modelMap) {
-		
-		List<Produit> prod = produitService.getAllproduit();
-		modelMap.addAttribute("produits",prod);
-		return "ListeProduits";
-		
-	}
+	
 	
 
 }
