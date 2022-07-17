@@ -10,7 +10,6 @@ import com.wat.apiSpringboot.repository.EmployeeRepository;
 
 import lombok.Data;
 
-@Data
 @Service
 public class EmployeeService {
 	

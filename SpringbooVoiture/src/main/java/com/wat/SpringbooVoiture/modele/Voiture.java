@@ -24,7 +24,7 @@ public class Voiture {
 	public Voiture() {}
 
 	public Voiture(String nom, int age) {
-		super();
+		
 		this.nom = nom;
 		this.age = age;
 	}

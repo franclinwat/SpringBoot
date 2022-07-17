@@ -1,0 +1,36 @@
+
+server:
+  port: 8087
+  
+#dataBase
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1
+    driverClassName: org.h2.Driver
+    username: sa
+    password: 
+#
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+#
+  h2:
+    console:
+      enabled: true
+
+## config log
+logging:
+  level:
+    # root = all
+    root: INFO
+    # all into package com.wat
+    com.wat: DEBUG
+    # only business type
+    business: DEBUG
+    org:
+      hibernate:
+        SQL: TRACE
+        type.descriptor.sql.BasicBinder: DEBUG
+    org.springframework.boot: INFO
+    
